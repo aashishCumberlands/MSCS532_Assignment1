@@ -5,7 +5,7 @@ Insertion Sort Algorithm - Monotonically Decreasing Order
 This repository contains an implementation of the Insertion Sort algorithm that sorts arrays in **monotonically decreasing order** (from largest to smallest).
 
 ## Author
-[Your Name]  
+Aashish Sapkota
 University of the Cumberlands  
 MSCS 532 - Data Structures and Algorithms
 
@@ -58,3 +58,4 @@ This project was developed with version control best practices:
 ## References
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to Algorithms* (4th ed.). MIT Press.
 ```
+

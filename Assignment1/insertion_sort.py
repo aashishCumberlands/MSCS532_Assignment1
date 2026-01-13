@@ -16,10 +16,27 @@ def insertion_sort_decreasing(arr):
     Returns:
         The sorted array in decreasing order
     """
-    # TODO: Implement insertion sort
-    pass
+    # Start from the second element (index 1)
+    for i in range(1, len(arr)):
+        key = arr[i]  # Current element to be inserted
+        j = i - 1
+        
+        # Move elements that are smaller than key to one position ahead
+        # For decreasing order, we move elements smaller than key
+        while j >= 0 and arr[j] < key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        
+        # Insert the key at its correct position
+        arr[j + 1] = key
+    
+    return arr
+
 
 # Test the function
 if __name__ == "__main__":
     test_array = [5, 2, 4, 6, 1, 3]
     print("Original array:", test_array)
+    
+    sorted_array = insertion_sort_decreasing(test_array.copy())
+    print("Sorted array (decreasing):", sorted_array)
